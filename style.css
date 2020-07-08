@@ -1,0 +1,105 @@
+body{
+	background-color: #f1f1f1;
+}
+
+.nav-main{
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height:60px;
+	background-color: #fff;
+	display: flex;
+	flex-wrap:wrap;
+	z-index:1000;
+}
+
+.btn-toggle-nav{
+	width: 60px;
+	left:0;
+	height:100%;
+	left: 0;
+	background-color: #f98f39;
+	background-image: url("https://cdn4.iconfinder.com/data/icons/navigation-40/24/hamburger-menu-512.png");
+	background-repeat:no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+.btn-toggle-nav:hover{
+	opacity:0.5;
+}
+
+.nav-main ul{
+	display:flex;
+	flex-wrap:wrap;
+	padding-left: 15px;
+}
+
+.nav-main ul li{
+	list-style:none;
+	line-height:20px;
+}
+
+.nav-main ul li a{
+	display: block;
+	height:100%;
+	padding:0px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#111;
+	font-family: arial;
+}
+
+.nav-side-bar{
+	position:fixed;
+	top:60px;
+	bottom:0;
+	left:0;
+	width: 50px;
+	height:calc(100vh-60px);
+	padding: 0 5px;
+	background-color: #1b1b1b; 
+	z-index: 1000;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-side-bar ul{
+	padding-top:15px;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.nav-side-bar ul li{
+	line-height:60px;
+	list-style: none;
+}
+
+.nav-side-bar ul li span{
+	display:block;
+	height:60px;
+	padding: 0 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: arial;
+	font-size: 16px;
+	white-space: nowrap;
+	opacity: 0;
+	transform: all 0.3s ease-in-out;
+}
+.nav-side-bar ul li a{
+	display:block;
+	height:60px;
+	padding: 0 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: arial;
+	font-size: 16px;
+	white-space: nowrap;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.nav-side-bar ul li a:hover{
+	background-color: #222;
+}
